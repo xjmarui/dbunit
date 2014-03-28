@@ -1,11 +1,14 @@
 language: php
 php:
-- "5.2"
 - "5.3"
 - "5.4"
 - "5.5"
 env:
 - DB=mysql
 - DB=sqlite
+before_script: 
+- pear config-set auto_discover 1
+- pear install pear.phpunit.de/PHPUnit
+- pear install pear install phpunit/DbUnit
 script: phpunit --configuration=phpunit_$DB.xml
 notifications: xjmarui@163.com

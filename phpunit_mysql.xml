@@ -10,7 +10,7 @@
     -->
     <php>
         <var name="host" value="localhost" />
-        <var name="user" value="vagrant" />
+        <var name="user" value="root" />
         <var name="pass" value="" />
         <var name="dbname" value="test" />
     </php>

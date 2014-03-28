@@ -13,7 +13,7 @@ class GuestbookMysqlTest extends PHPUnit_Extensions_Database_TestCase
         if ($this->conn === NULL) {
             if (self::$pdo === NULL) {
 
-                $dsn = strtr('mysql:host=%host;dbname=%dbname;', ['%host'=> $GLOBALS['host'], '%dbname'=> $GLOBALS['dbname']]);
+                $dsn = strtr('mysql:host=%host;dbname=%dbname;', array('%host'=> $GLOBALS['host'], '%dbname'=> $GLOBALS['dbname']));
                 $options = array(
                     PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
                 );

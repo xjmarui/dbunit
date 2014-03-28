@@ -8,4 +8,4 @@ env:
 - DB=mysql
 - DB=sqlite
 script: phpunit --configuration=phpunit_$DB.xml
-notificatin: xjmarui@163.com
+notifications: xjmarui@163.com

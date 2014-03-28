@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phpunit colors="true">
+    <testsuites>
+        <testsuite name="Dbunit"> 
+            <directory suffix="MysqlTest.php">tests</directory>
+        </testsuite>
+    </testsuites>
+    <!--
+       -设定mysql配置
+    -->
+    <php>
+        <var name="host" value="localhost" />
+        <var name="user" value="vagrant" />
+        <var name="pass" value="" />
+        <var name="dbname" value="test" />
+    </php>
+</phpunit>

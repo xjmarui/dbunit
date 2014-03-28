@@ -1,4 +1,3 @@
----
 language: php
 php:
 - "5.2"
@@ -9,4 +8,4 @@ env:
 - DB=mysql
 - DB=sqlite
 script: phpunit --configuration=phpunit_$DB.xml
-...
+notificatin: xjmarui@163.com
